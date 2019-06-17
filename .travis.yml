@@ -3,8 +3,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t jfmolderez/ReactDocker -f Dockerfile.dev .
+  - docker build -t jfmolderez/reactdocker -f Dockerfile.dev .
 
 script:
-  - docker run jfmolderez/ReactDocker npm run test -- --coverage
+  - docker run jfmolderez/reactdocker npm run test -- --coverage
 
